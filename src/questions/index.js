@@ -25,3 +25,7 @@ export const questions = [
       answer: "Virtual DOM"
     }
   ];
+
+  export const Scores = [
+    '1000','2000','3000','5000','8000'
+  ]

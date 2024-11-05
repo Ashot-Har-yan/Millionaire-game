@@ -12,7 +12,7 @@ const Question = ({ question, options, onAnswer }) => {
                 <Title level={2} style={{textAlign:'center'}}>{question}</Title>
                 <Row gutter={16} justify="center" style={{gap:'15px'}}>
                     {options.map((option, index) => (
-                        <Col span={12} key={index}>
+                        <Col span={10} key={index}>
                             <Button  block onClick={() => onAnswer(option)} >
                                 {option}
                             </Button>

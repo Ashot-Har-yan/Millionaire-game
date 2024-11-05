@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Layout, Menu, Card, Button, Row, Typography, message } from 'antd';
-import Question from '../gamePage'; 
-import { questions } from '../questions'; 
+import Question from '../../gamePage'; 
+import { questions } from '../../questions'; 
 
 const { Title } = Typography;
 const { Sider, Content } = Layout;

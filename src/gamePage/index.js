@@ -3,11 +3,10 @@ import { useForm } from 'antd/es/form/Form';
 import React from 'react';
 import './index.css'
 
-const Question = ({ question, options, onAnswer,score}) => {
+const Question = ({ question, options, onAnswer}) => {
     const [form] = useForm();
     const { Title } = Typography;
     return (
-        
             <Form form={form} className='question_container'>
                 <Title level={1} style={{textAlign:'center', color:'black',
                 background:'rgba(255,255,255,0.5)',maxHeight:'100px',justifySelf:'center',padding:'12px 24px'

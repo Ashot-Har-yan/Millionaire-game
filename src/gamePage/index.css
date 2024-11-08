@@ -1,3 +1,8 @@
 .question_container{
+    background-image: url('../pages/images/1-16.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px; 
+    height: 70vh;
     
 }

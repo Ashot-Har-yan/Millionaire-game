@@ -6,7 +6,7 @@ import { regexpValidation, ROUTE_CONSTANTS,FIRESTORE_PATH_NAMES } from '../../..
 import { doc,setDoc } from 'firebase/firestore';
 import AuthWrapper from '../../../component/sheard/AuthWrapper';
 import { Link, useNavigate } from 'react-router-dom';
-import registerBanner from '../../images/reg.jpeg'
+import registerBanner from '../../images/H2x1_NSwitch_WhoWantsToBeAMillionaire_UK_image1280w.jpg'
 
 const Register = () => {
   const [loading, setLoading] = useState(false);
@@ -33,11 +33,12 @@ const Register = () => {
   }
 
   return (
-    <AuthWrapper title="Sign up" banner={registerBanner}>
+    <AuthWrapper title="Register" banner={registerBanner}>
       <Form layout="vertical" form={form} onFinish={handleRegister}>
         <Form.Item
           label="First Name"
           name="firstName"
+          labelStyle='label-color'
           rules={[
             {
               required: true,
@@ -71,7 +72,7 @@ const Register = () => {
             }
           ]}
         >
-          <Input type="email" placeholder="Email"/>
+          <Input type="email" placeholder="Email" />
         </Form.Item>
 
         <Form.Item
@@ -115,7 +116,7 @@ const Register = () => {
           <Input.Password placeholder="Config Password"/>
         </Form.Item>
 
-        <Flex align="flex-end" gap="10px" justify="flex-end">
+        <Flex align="flex-end" gap="10px" justify="space-around">
           <Link to={ROUTE_CONSTANTS.LOGIN}>
             Sign in
           </Link>

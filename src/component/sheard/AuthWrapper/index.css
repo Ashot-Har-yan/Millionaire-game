@@ -1,19 +1,25 @@
 .auth_wrapper{
-    max-width:800px;
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
-    margin: 10px auto;
-}
-
-.banner_container{
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+    background-image: url('../../../pages/images/H2x1_NSwitch_WhoWantsToBeAMillionaire_UK_image1280w.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+  
+    display: flex;
+    align-items:start;
+    justify-content:end;
+    
 }
+
 .form_container{
-    border:1px solid rgba(221,220,220,.92);
-    border-bottom-right-radius: 12px;
-    border-top-right-radius:12px ;
+    width: 350px;
     padding: 12px;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.09);
+    border-radius: 12px;
+  
 }
+
+

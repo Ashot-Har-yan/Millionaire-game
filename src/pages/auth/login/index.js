@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { Form, Button, Input,notification } from 'antd';
+import { Form, Button, Input,Flex,notification } from 'antd';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../../services/firebase'
 import { ROUTE_CONSTANTS } from "../../../util/constant";
 import { Link } from "react-router-dom";
-import loginBanner from '../../images/login.webp'
 import AuthWrapper from "../../../component/sheard/AuthWrapper";
 
 
@@ -32,7 +31,7 @@ const Login = ({setIsAuth}) => {
 };
 
  return(
-    <AuthWrapper title = "Sign In" banner = {loginBanner}>
+    <AuthWrapper title = "Login" >
          <Form layout="vertical" form = {form} onFinish = {handleLogin}>
                <Form.Item
                     label = "Email"
@@ -60,15 +59,17 @@ const Login = ({setIsAuth}) => {
                     >
                         <Input.Password placeholder="Password"/>
                 </Form.Item>
-
+                <Flex align="flex-end" gap="10px" justify="space-between">
                 <Button type = "primary" htmlType="submit" loading = {loading}>
-                    Login
+                    Sign in
                 </Button>
                 
                 <Link to = {ROUTE_CONSTANTS.REGISTER}>
                     Create Account
                     </Link>
+                    </Flex>
             </Form>
+            
             </AuthWrapper>
  )
 }

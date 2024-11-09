@@ -3,14 +3,13 @@ import { getAuth } from "firebase/auth";
 
 import { initializeApp } from "firebase/app";
 const firebaseConfig = {
-  apiKey: "AIzaSyBXYefjeScheaPVal5Udo12xVH6nNXAJGk",
-  authDomain: "jira-ea834.firebaseapp.com",
-  databaseURL: "https://jira-ea834-default-rtdb.firebaseio.com",
-  projectId: "jira-ea834",
-  storageBucket: "jira-ea834.appspot.com",
-  messagingSenderId: "1063540445639",
-  appId: "1:1063540445639:web:9a8c6665ad7c0f84a9c9e2",
-  measurementId: "G-6D6ZPKZPE1"
+  apiKey: "AIzaSyCUsmdGbriNdtsK7ZnDvsaZyuOLLHMyWk8",
+  authDomain: "millionaire-game-4677b.firebaseapp.com",
+  projectId: "millionaire-game-4677b",
+  storageBucket: "millionaire-game-4677b.firebasestorage.app",
+  messagingSenderId: "144227485385",
+  appId: "1:144227485385:web:36d458b99d6571f8016f18",
+  measurementId: "G-DP72EH9SPC"
 };
 
 const app = initializeApp(firebaseConfig);

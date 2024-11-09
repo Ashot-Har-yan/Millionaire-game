@@ -13,8 +13,7 @@ import './App.css';
 const App = ()=>{  
   const [isAuth,setIsAuth] = useState(false);
   useEffect(()=>{
-    onAuthStateChanged(auth,(user)=>{
-     console.log(user);
+    onAuthStateChanged(auth,()=>{
     })
   },[]);
 

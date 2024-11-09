@@ -38,7 +38,6 @@ const Register = () => {
         <Form.Item
           label="First Name"
           name="firstName"
-          labelStyle='label-color'
           rules={[
             {
               required: true,
